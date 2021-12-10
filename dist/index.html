@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Feedback Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="container">
+<header id="header"> 
+<h1 id="title" class="text-center bold">AfriTech Survey Form</h1>
+<p id="description" class="description text-center">This is a survey for Africans in tech. Thank you for taking the time to help us improve our research</p>
+</header>
+<main>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" class="bold">Name</label>
+      <input 
+             id="name" 
+             type="text" 
+             name="name"
+             class="form-control"
+             placeholder="Enter your name" 
+             required
+      >
+    </div>    
+    <div class="form-group">
+      <label id="email-label" class="bold">Email</label>
+      <input 
+             id="email" 
+             type="email" 
+             name="email"
+             class="form-control"
+             placeholder="Enter your email" 
+             required
+      >
+    </div>
+    <div class="form-group">
+      <label id="number-label" class="bold">Age<span class="clue">(optional)</span></label>
+      <input
+             id="number"
+             type="number"
+             name="age"
+             min="10"
+             max="99"
+             class="form-control"
+             placeholder="Age"
+    </div>
+      <div class="form-group">
+        <p class="bold" style="text-align: left;">Which option best describes your job role</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="fullstack">Full Stack Developer</option>
+          <option value="frontend">Front End Developer</option>
+          <option value="backend">Back End Developer</option>
+          <option value="uiux">UI/UX Designer</option>
+          <option value="Scrum">IT & Automation</option>
+          <option value="pm">DevOps</option>
+          <option value="graphic">Graphic Designer</option>
+          <option value="devadvocate">Data Scientist</option>
+          <option value="other">Other<span class="clue">(Describe in comment box)</span></option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p class="bold" style="text-align: left;">Type of contract</p>
+        <label>
+          <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+          />Full Time onsite
+        </label>
+        
+        <label>
+          <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />Part Time Onsite
+        </label>
+
+        <label>
+          <input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Remote Full Time
+        </label>
+       
+        <label>
+          <input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Remote Part Time
+        </label>
+        <label>
+          <input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Internship
+       </label>
+       <label>
+         <input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Freelance
+       </label>
+      </div>
+      <div class="form-group">
+        <p class="bold" style="text-align: left;">Average Yearly Salary</p>
+        <label>
+          <input
+                 name="user-recommend"
+                 value="not-sure"
+                 type="radio"
+                 class="input-radio"
+          /> &lt $10k
+        </label>
+                <label>
+          <input
+                 name="user-recommend"
+                 value="not-sure"
+                 type="radio"
+                 class="input-radio"
+          />$10k - $15k
+        </label>
+                <label>
+          <input
+                 name="user-recommend"
+                 value="not-sure"
+                 type="radio"
+                 class="input-radio"
+          />$15 - $20k
+        </label>
+                <label>
+          <input
+                 name="user-recommend"
+                 value="not-sure"
+                 type="radio"
+                 class="input-radio"
+          /> $20 - $30k
+        </label>
+                <label>
+          <input
+                 name="user-recommend"
+                 value="not-sure"
+                 type="radio"
+                 class="input-radio"
+          /> $30 - $50k
+        </label>
+                <label>
+          <input
+                 name="user-recommend"
+                 value="not-sure"
+                 type="radio"
+                 class="input-radio"
+          />$50 - $70k
+        </label>
+                <label>
+          <input
+                 name="user-recommend"
+                 value="not-sure"
+                 type="radio"
+                 class="input-radio"
+          /> $70k - $90k
+        </label>
+                <label>
+          <input
+                 name="user-recommend"
+                 value="not-sure"
+                 type="radio"
+                 class="input-radio"
+          />$90k - $100k
+        </label>
+                <label>
+          <input
+                 name="user-recommend"
+                 value="not-sure"
+                 type="radio"
+                 class="input-radio"
+          />$100k - $120k
+        </label>
+                <label>
+          <input
+                 name="user-recommend"
+                 value="not-sure"
+                 type="radio"
+                 class="input-radio"
+          /> &gt $120k
+        </label>
+      </div>
+      <div class="form-group">
+        <p class="bold">Which of this(these) role(s) do you plan to venture into in the near future?</p>
+        <label>
+          <input
+          name="prefer"
+          value="scrum"
+          type="checkbox"
+          class="input-checkbox"
+        />Scrum Master
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value="pm"
+            type="checkbox"
+            class="input-checkbox"
+          />Product manager
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value="recruiter"
+            type="checkbox"
+            class="input-checkbox"
+          />Technical Recruiter
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value="writer"
+            type="checkbox"
+            class="input-checkbox"
+          />Technical Writer
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value="webmanager"
+            type="checkbox"
+            class="input-checkbox"
+          />Web Analytics Manager
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value="infoarchitect"
+            type="checkbox"
+            class="input-checkbox"
+          />Information Architect
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value="tester"
+            type="checkbox"
+            class="input-checkbox"
+          />Game/Software Tester
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value="youtube"
+            type="checkbox"
+            class="input-checkbox"
+          />Youtuber
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value="advocate"
+            type="checkbox"
+            class="input-checkbox"
+          />Software Developer Advocate
+        </label>
+      </div>
+      <div class="form-group">
+        <p class="bold">Additional information/Comments or Suggestions</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      <div class="form-group">
+       <button type="submit" id="submit" class="submit-button bold">
+        Submit
+      </button>
+      </div>
+  </form>
+</main>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
